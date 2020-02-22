@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+
+.price {
+        color: grey;
+        font-size: 22px;
+      }
+
+      div.example {
+        background-color: lightgrey;
+        padding: 20px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      
+      
+    </style>
+  </head>
+  <body>
+
+
+<div style="padding-left:16px"></div>
+
+<br />Go back to the <br /><a href="./index.html">home page</a>
+<div class="example"><h2>Welcome to Rick & Morty Store</h2></div>
+
+<p>
+  <center><p>
+    Rick and Morty t-shirts, posters, gifts and accessories featuring
+    everyone's favourite alcoholic, interdimensional, scientist-grandpa Rick
+    Sanchez and kind-hearted grandson Morty Smith: The Mortiest Morty, from
+    C-137. What, so everyone's supposed to sleep every single night now?!
+    You realise that night time makes up half of all time?
+  </p></center>
+</p>
+
+<center><img
+  src="https://cdn.shopify.com/s/files/1/1375/9903/products/ts130524rmt_944x.progressive.jpg?v=1580138805"
+  alt="this is Rick and morty shirt"
+  style="width:25%"
+/>
+<br />
+<p class="price">Price : $15</p>
+
+<br />
+<span>Quantity: </span>
+<input id="shirtquantity" type="text" value="0" />
+<br />
+<br/>
+<center><button onclick="calculatePrice()" type="button">calculatePrice</button></center>
+<br/>
+<center>
+    <span>Total price: $</span><span id="totalPrice"></span>
+</center> 
+
+
+<br/>
+<button class="btn btn-primary btn-purchase" type="button">Check out</button>
+<button class="btn btn-danger" type="button">REMOVE</button>
+
+
+<center>
+
+<script>
+  //---------------------------
+  //javascript shopping cart
+  //---------------------------
+
+  function calculatePrice() {
+    //console.log("calculateprice is clicked!!!");
+    var inputEl = document.getElementById("shirtquantity");
+    //console.log(inputEl);
+    var inputText = inputEl.value;
+    //console.log("inputText", inputText);
+    //console.log("Type", typeof inputText);
+    var Quantity = parseInt(inputText);
+    console.log("quantity", Quantity);
+    console.log("type", typeof Quantity);
+
+    //check for valid integer input
+    if (isNaN(Quantity)) {
+      console.log("you must type an integer value for the quantity");
+      return;
+    }
+
+    //check for positive integer
+    if (Quantity < 0) {
+      console.log("you must inter positive integer for the quantity");
+      return;
+    }
+    //check valid positive intger data
+
+    var price = 15.0;
+    var totalprice = Quantity * price;
+    //console.log("totalprice", totalprice);
+    var outputEl = document.getElementById("totalPrice");
+    outputEl.innerText = totalprice;
+    
+  }
+  
+//removes cart item
+
+  
+</script>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<address>
+  Written by sayif said <br />
+  Visit us at:<br />
+  Student ID: 13178132 <br/>
+  www.rick&morty.com<br />
+  London,UK<br />
+</address>
+
+
+</body>
+</html>
