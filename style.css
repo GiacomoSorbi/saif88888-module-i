@@ -1,0 +1,532 @@
+/* start Global */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* end Global */
+
+/* start navbar */
+
+.navbar {
+  font-size: 18px;
+  height: 0;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar .brand {
+  float: left;
+  width: 50%;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.navbar .links {
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+}
+.navbar .links li {
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+  color: #0091cc;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+  border-bottom: 2px solid #0091cc;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar .links {
+    float: center;
+    margin-top: 0px;
+  }
+  .navbar .brand {
+    display: none;
+  }
+}
+/* end navbar */
+
+/* start header */
+
+.header {
+  background: url("../milestone05/images/GettyImages-1014108378.jpg");
+  position: relative;
+  height: 1000px;
+}
+
+.header .overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100;
+  height: 100;
+  color: #fff;
+  z-index: 1;
+}
+
+.header .bx-wrapper {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  height: 100%;
+  text-align: center;
+}
+
+.header .bx-wrapper {
+  height: 100%;
+}
+.header .bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: 0;
+  background: none;
+  height: 100 !important;
+  text-align: center;
+}
+
+.header .bxslider {
+  height: 100%;
+}
+
+.header .bxslider li {
+  display: inline-grid;
+  background-color: none;
+  height: 300px;
+}
+
+.header .bxslider li p {
+  font-size: 60px;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.header .bxslider li h2 span {
+  color: #f7b731;
+}
+
+/* end header */
+
+/* start our services */
+
+.services {
+  padding: 80px 20px 40px;
+}
+
+.services .item {
+  float: left;
+  width: 43%;
+  margin-bottom: 20px;
+}
+
+.services .item i {
+  color: #f7b731;
+  float: left;
+  width: 6%;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+
+.services .item .info {
+  float: left;
+  width: 95%;
+}
+
+.services .item .info h3 {
+  font-weight: normal;
+  color: #0091cc;
+  margin-bottom: 10px;
+}
+
+.services .item .info p {
+  margin-top: 0;
+  color: #888;
+}
+
+.services h2 {
+  color: #0091cc;
+}
+
+.ourclients {
+  padding: 0px 20px;
+}
+
+.ourclients .box {
+  float: left;
+}
+.ourclients .box:first-child {
+  width: 0%;
+}
+
+.ourclients .box:not(:first-child) {
+  width: 20%;
+  text-align: right;
+  position: relative;
+  transition: all 1s ease-in-out;
+  padding: 10px;
+}
+.ourclients .box:not(:first-child) .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 95%;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgba(247, 183, 49, 0.7);
+  display: none;
+}
+.ourclients .box:not(:first-child):hover .overlay {
+  display: block;
+}
+
+.ourclients .box:not(:first-child) img {
+  width: 100%;
+}
+
+.ourclients h2 {
+  color: #0091cc;
+}
+
+@media screen and (max-width: 767px) {
+  .services .item {
+    text-align: center;
+  }
+  .services .item i {
+    display: none;
+  }
+}
+
+/* end our services */
+
+/* start video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* end video container */
+/* start our testimonal */
+
+.testimoneal {
+  background: url("../milestone05/images/Untitled.png");
+  height: 380px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .testimoneal {
+    display: none;
+  }
+}
+
+/* end our testimonal  */
+
+/* start footer */
+
+.footer {
+  background-color: #0091cc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  padding: 20px 20px 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer ul li {
+  display: inline-block;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+.fa-youtube {
+  background: red;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    text-align: left;
+  }
+}
+
+/* end footer */
+
+/* start myframework */
+.seperator {
+  border: 1px solid #eee;
+  display: block;
+  margin: 40px 0;
+}
+.clearfix {
+  clear: both;
+}
+
+/* end myframework */
+
+/* start our vessels */
+
+.our-vassels {
+  background-color: white;
+  width: auto;
+
+  overflow: hidden;
+}
+
+.our-vassels .image {
+  float: left;
+  width: 50%;
+}
+
+.our-vassels .image img {
+  width: 100%;
+}
+
+.our-vassels .info {
+  float: left;
+  width: 86%;
+  color: #0091cc;
+}
+
+.our-vassels .inf h2 {
+  margin: 40px 0 20px 40px;
+  color: #0091cc;
+}
+.our-vassels .info p {
+  margin: 0 0 10px 40px;
+  line-height: 1.3;
+  color: #888;
+}
+
+.our-vassels .info .contents {
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.our-vassels .info .contents > div {
+  float: left;
+  width: 45%;
+  min-height: 100px;
+}
+
+.our-vassels .info .contents .icon {
+  float: left;
+  width: 30px;
+}
+.our-vassels .info .contents .icon img {
+  max-width: 100%;
+  margin: 0px 10px 0 0;
+}
+
+.our-vassels .info .contents .text {
+  float: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  .our-vassels .info .contents > div {
+    float: none;
+  }
+}
+/* end our vessles */
+
+/* start features */
+
+.features {
+  overflow: hidden;
+  padding-top: 27px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.features .feat {
+  height: 150px;
+}
+.features .center {
+  display: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.features .feat h2 {
+  text-transform: capitalize;
+  color: #55acee;
+}
+
+.features .feat p {
+  line-height: 1.4;
+  color: grey;
+  text-align: justify;
+  padding: 0 20 0 0;
+}
+
+@media (max-width: 767px) {
+  .features .feat {
+    width: 20%;
+    margin: 20px;
+    float: left;
+  }
+}
+
+/* end features */
+
+/* start contact us form */
+
+.contact {
+  background-size: cover;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #55acee;
+}
+
+.contact p {
+  color: #444;
+}
+.contact form {
+  width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+  width: 48%;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact form input[type="text"] {
+  float: left;
+}
+.contact form input[type="email"] {
+  float: right;
+}
+
+.contact form textarea {
+  margin-top: 5%;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.contact form .info {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.contact form button {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  border: 1px s;
+  background-color: #55acee;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.contact form .info form-icons {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    text-align: left;
+  }
+  .contact form {
+    float: left;
+  }
+}
+/* end contact us form */
