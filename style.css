@@ -76,7 +76,8 @@ ul {
 /* start header */
 
 .header {
-  background: url("images/GettyImages-1014108378.jpg");
+  background: url("https://giacomosorbi.github.io/saif88888-module-i/images/GettyImages-1014108378.jpg");
+
   position: relative;
   height: 1000px;
 }
@@ -254,7 +255,8 @@ ul {
 /* start our testimonal */
 
 .testimoneal {
-  background: url("images/Untitled.png");
+  background: url("https://giacomosorbi.github.io/saif88888-module-i/images/Untitled.png");
+
   height: 380px;
   background-size: cover;
 }
