@@ -223,7 +223,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .services .item {
-    text-align: center;
+    float: none;
   }
   .services .item i {
     display: none;
