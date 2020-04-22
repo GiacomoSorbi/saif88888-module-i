@@ -176,7 +176,6 @@ ul {
   color: #0091cc;
 }
 
-
 .ourclients {
   padding: 0px 20px;
 }
@@ -531,5 +530,9 @@ ul {
   .contact form {
     float: left;
   }
+}
+
+/* 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
 }
 /* end contact us form */
