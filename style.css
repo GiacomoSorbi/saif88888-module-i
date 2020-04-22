@@ -229,6 +229,9 @@ ul {
   .services .item i {
     display: none;
   }
+  .services .item .info {
+    display: none;
+  }
 }
 
 /* end our services */
